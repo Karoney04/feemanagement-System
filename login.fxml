@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane styleClass="root1" stylesheets="@background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="836.0">
+         <children>
+            <Pane prefHeight="107.0" prefWidth="836.0" style="-fx-background-color: green; -fx-background-radius: 20;">
+               <children>
+                  <Label alignment="CENTER" layoutX="320.0" layoutY="5.0" prefHeight="39.0" prefWidth="217.0" text="Welcome" textFill="#f5f5f5">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <AnchorPane prefHeight="597.0" prefWidth="836.0" stylesheets="@background.css">
+               <children>
+                  <Pane layoutX="126.0" layoutY="75.0" prefHeight="344.0" prefWidth="597.0" styleClass="frosty-box" stylesheets="@background.css">
+                     <children>
+                        <ImageView layoutX="264.0" layoutY="-5.0" style="-fx-rotate: 45;">
+                           <image>
+                              <Image url="@../sample/padlock-7-64.png" />
+                           </image>
+                        </ImageView>
+                        <PasswordField fx:id="password" alignment="CENTER" layoutX="140.0" layoutY="179.0" prefHeight="40.0" prefWidth="280.0" promptText="Enter Password" style="-fx-text-fill: black; -fx-background-radius: 40; -fx-background-color: null; -fx-border-color: white; -fx-border-radius: 40; -fx-text-fill: white;">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </PasswordField>
+                        <TextField fx:id="userName" alignment="CENTER" layoutX="141.0" layoutY="62.0" prefHeight="40.0" prefWidth="280.0" promptText="Enter Username" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-background-color: null; -fx-border-radius: 40; -fx-border-color: white; -fx-text-fill: white;">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <ImageView fitHeight="58.0" fitWidth="64.0" layoutX="255.0" layoutY="114.0" style="-fx-rotate: 180;">
+                           <image>
+                              <Image url="@../sample/key-64.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="loginbtn" layoutX="194.0" layoutY="260.0" onAction="#login" prefHeight="38.0" prefWidth="155.0" style="-fx-background-color: #02020A; -fx-border-radius: 40; -fx-background-radius: 40; -fx-text-fill: white;" text="Login">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXCheckBox fx:id="passBox" layoutX="441.0" layoutY="189.0" onAction="#passcheckBox" text="Show Password" textFill="#fcfcfc">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXCheckBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

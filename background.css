@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 14, 2022, 1:02:58 PM
+    Author     : KARONEY
+*/
+
+.frosty-box {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, .5), 15, 0, 0, 5);
+}
+
+.frosty-box {
+    -fx-background-color: rgba(255, 255, 255, .4);
+    -fx-background-radius: 20;
+}
+.root {
+     -fx-background-image: url("720843.jpg");
+}
+.root1 {
+     -fx-background-image: url("1.jpg");
+}
+.root2 {
+     -fx-background-image: url("wall.jpg");
+}
